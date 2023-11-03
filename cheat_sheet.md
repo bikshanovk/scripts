@@ -14,3 +14,4 @@ Load Analysis:
 sudo lsof  -p 7317 | wc
 ps -eLf | grep /usr/bin/docker | wc
 
+grep --after-context=10 outputs terraform.tfstate
