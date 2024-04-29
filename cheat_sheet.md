@@ -15,3 +15,11 @@ sudo lsof  -p 7317 | wc
 ps -eLf | grep /usr/bin/docker | wc
 
 grep --after-context=10 outputs terraform.tfstate
+
+Helm Commands:
+Working with Subcharts:
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm pull bitnami/wordpress
+tar -xvf wordpress-22.2.2.tgz && cd wordpress
+helm show values ../wordpress | less
+helm show values ../wordpress/charts/mariadb | less
