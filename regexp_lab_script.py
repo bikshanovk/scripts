@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+#Practice working with regexp
+
 import re
 import csv
 
@@ -21,8 +23,10 @@ def replace_domain(address, old_domain, new_domain):
 def main():
   """Processes the list of emails, replacing any instances of the old domain with the new domain."""
   old_domain, new_domain = 'abc.edu', 'xyz.edu'
-  csv_file_location = '/home/student-04-db92fd647760/data/user_emails.csv'
-  report_file = '/home/student-04-db92fd647760/data' + '/updated_user_emails.csv'
+  #csv_file_location = '/home/student-04-db92fd647760/data/user_emails.csv'
+  #report_file = '/home/student-04-db92fd647760/data' + '/updated_user_emails.csv'
+  csv_file_location = './regexp_lab_script_data/user_emails.csv'
+  report_file = './regexp_lab_script_data/updated_user_emails.csv'
   user_email_list = []
   old_domain_email_list = []
   new_domain_email_list = []

@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+
+#the script can load all processor cores with work
+#By default, half the processors in the system are loaded
+#Need to add how to select the CPU load percentage when running the script
+
 import math
 import multiprocessing
 from multiprocessing import Process
@@ -20,8 +25,3 @@ if __name__ == '__main__':
         name = "Process #%s" % (i+1)
         p = Process(target=cpuload, args=(name,))
         p.start()
-
-#скрипт умеет нагружать работой все ядра процессора
-#По умолчанию нагружается половина процессоров в системе
-#Нужно научить при запуске скрипта выбирать процент загрузки процессора
-

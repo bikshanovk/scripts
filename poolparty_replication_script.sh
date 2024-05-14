@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Script replicates data between master and slave instance of PoolParty
+
 # Exit on the first command that returns a nonzero code.
 set -e
 
